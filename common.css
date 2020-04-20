@@ -1,0 +1,377 @@
+body {
+    color: #555555;
+    background-color: rgb(232, 238, 255);
+}
+
+#main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#top_pic {
+    margin: 20px 0;
+    vertical-align: bottom;
+    border-radius: 10px;
+}
+
+
+/* 全記事共通----------------------- */
+article {
+    margin: 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+article .bg_image {
+    width: 1000px; 
+    height: 700px;
+    vertical-align: bottom;
+    border-radius: 10px;
+}
+
+article .page {
+    width: 980px;
+    height: 680px;
+    background-color: rgb(255, 253, 249);
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
+article h1 {
+    width: 600px;
+    margin: 30px auto 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    border-bottom: solid 1px black;
+}
+
+article .page_main {
+    margin-top: 25px;
+}
+article .page_main:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+h2 {
+    font-size: 23px;
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    border-radius: 50%;
+    line-height: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+/* 全記事共通ここまで--------------------- */
+
+
+/* article　毎の設定--------------------- */
+
+/* who are you ----------*/
+#whoareyou .bg_image { height: 800px; }
+#whoareyou .page {
+    height: 780px;
+}
+
+#whoareyou .content {
+    float: left;
+    width: 300px;
+}
+
+#whoareyou .content:first-child {
+    margin-left: 40px;
+}
+
+/* profile */
+#whoareyou #profile h2 {
+    border: solid 5px rgb(0, 170, 0);
+    color: rgb(0, 170, 0);
+}
+/* like */
+#whoareyou #like h2 {
+    border: solid 5px rgb(0, 154, 214);
+    color: rgb(0, 154, 214);
+}
+/* qualification */
+#whoareyou #qualification h2 {
+    border: solid 5px rgb(255, 95, 95);
+    color: rgb(255, 95, 95);
+}
+
+#whoareyou .page_sub::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#whoareyou .page_sub img {
+    border-radius: 50%;
+    border: solid 2px black;
+    margin: 50px 20px;
+}
+/* whoareyou ----------------- */
+
+
+
+/* career */
+#background .bg_image {
+    height: 1400px;
+}
+#background .page {
+    height: 1380px;
+}
+
+#background .contents {
+    content: "";
+    clear: both;
+    display: block;
+}
+#background .content_center {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 30px 0;   
+}
+
+
+#background .contents .student {
+    height: 350px;
+    margin: 50px 0;
+}
+#background .contents .university {
+    height: 300px;
+    margin: 50px 0;
+}
+#background .contents .employed_person {
+    height: 300px;
+    margin: 50px 0;
+}
+#background .contents .contents_tech h2 {
+    border: solid 5px rgb(0, 154, 214);
+    color: rgb(0, 154, 214);
+}
+#background .contents .contents_other h2 {
+    border: solid 5px rgb(255, 95, 95);
+    color: rgb(255, 95, 95);
+}
+
+#background .contents .contents_tech {
+    float: left;
+    width: 300px;
+    margin-left: 120px;
+}
+
+/* time */
+#background .contents .contents_time {
+    float: left;
+    width: 25px;
+    margin: 0px 60px 0px;
+}
+#background .contents_time .contents_head {
+    height: 160px;
+}
+#background .contents_time .times {
+    writing-mode: vertical-rl;
+    font-weight: bold;
+}
+#background .contents_time .times p {
+    padding: auto;
+    background-color: rgb(190, 255, 129);
+    border-radius: 12px;
+    margin: 0;
+}
+
+/* time */
+
+#background .contents .contents_other {
+    float: left;
+    width: 300px;
+
+} 
+#background .contents span {
+    color: red;
+    font-size: 18px;
+}
+
+
+
+/* Portfolio ----------------- */
+#portfolio .bg_image { height: 1200px;}
+#portfolio .page {height: 1180px; }
+#portfolio h2 {
+    line-height: 35px;
+    background-color: rgb(0, 189, 189);
+    border-radius: 50%;
+    color: whitesmoke;
+}
+#portfolio .link {
+    width: 500px;
+    height: 40px;
+    margin: 10px auto;
+}
+#portfolio .link a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    float: left;
+    margin-left: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: bold;
+}
+#portfolio .link #github {
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    color: whitesmoke;
+}
+#portfolio .link #heroku {
+    background-color: rgb(15, 96, 202);
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+#portfolio h3 {
+    font-size: 16px;
+    background-color: rgb(0, 189, 189);
+    color: whitesmoke;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 3px 0;
+}
+#portfolio #overview h3 {
+    margin: 20px auto 5px;
+    width: 600px;
+}
+#portfolio #overview_content {
+    margin: 5px auto;
+    width: 900px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+}
+#portfolio #overview_content p {
+    margin: 0;
+    padding: 10px 0;
+}
+#portfolio span{
+    color: rgb(255, 58, 58);
+    font-weight: bold;
+    font-size: 18px;
+}
+#portfolio .contents {
+    width: 900px;
+    margin: 40px;
+}
+#portfolio .contents::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#portfolio .contents p {
+    margin: 0;
+    line-height: 20px;
+    padding: 5px;
+}
+#portfolio .portfolio_L { 
+    width: 450px;
+    float: left;
+}
+#portfolio .portfolio_L::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#portfolio #portfolio_img {
+    width: 400px;
+    height: auto;
+    margin: 0 25px;
+}
+#portfolio .portfolio_R {
+    width: 450px;
+    float: right;
+}
+#portfolio .portfolio_R h3 {
+    width: 180px;
+    margin: 15px auto 5px;
+}
+
+#portfolio .portfolio_R_L{
+    width: 200px;
+    float: left;
+    margin-left: 10px;
+}
+#portfolio .portfolio_R_R {
+    width: 200px;
+    float: right;
+    margin-right: 10px;
+}
+#portfolio .portfolio_R_contents {
+    width: 200px;
+    margin: 5px auto;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+}
+#portfolio .null_div::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#portfolio .portfolio_function {
+    clear: both;
+    width: 430px;
+    height: auto;
+    margin: 5px auto;
+}
+#portfolio .portfolio_function h3 {
+    width: 300px;
+    margin: 20px auto 5px;
+}
+#portfolio .portfolio_function .portfolio_R_contents {
+    width: 430px;
+    margin: 5px auto;
+}
+
+
+/* thankyou */
+#thankyou .bg_image {
+    height: 400px;
+}
+#thankyou .page {
+    height: 380px;
+}
+
+#thankyou .contact {
+    width: 500px;
+    height: 40px;
+    margin: 50px auto 20px;
+}
+#thankyou a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    float: left;
+    margin-left: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: bold;
+}
+#thankyou .github {
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    color: whitesmoke;
+}
+#thankyou .twitter {
+    background-color: rgb(29,161,242);
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-size: 12px;
+}

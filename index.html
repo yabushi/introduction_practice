@@ -1,0 +1,287 @@
+<!-- コンテンツの横幅はもう少し狭めのほうがいい？　画面分割状態でも見れるように？ -->
+<!-- 画像はCSSでサイズ指定するべき？-->
+<!-- CSSも含めた、コメントアウトのうまい方法 -->
+<!-- page_titleのように、使ってないクラスのdivは削除したほうがいい？-->
+<!-- インデント多くなりすぎ？　左のスペース無駄？ -->
+
+<!-- 工夫ポイント 
+    ・who are you ページに写真４枚入れてみた。説明するより写真のほうが効果は高い？？
+    ・ポートフォリオページで、概要の重要部分を下線でなく赤の太字にし、文字サイズを大きくした。
+-->
+
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Introduction!</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Introduction of Shigeki Yabune!">
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- no header ? -->
+        </header>
+
+        <div id="main">
+            <div id="top_image">
+                <img id="top_pic" src="./images/top_image.jpg" width="1000px" height="700px" alt="">
+            </div><!-- top_image -->
+            
+
+            <article id="whoareyou">
+
+                <img class="bg_image" src="./images/contents_background.JPG" alt="">
+
+                <div class="page">
+
+                    <div class="page_title">
+                        <h1>Who are you ?</h1>
+                    </div><!-- page_title -->
+
+                    <div class="page_main"> <!-- クラスかIDかで迷った。＆命名 -->
+                        <div class="content" id="profile">
+                            <h2>プロフィール</h2>
+                            <p><i class="fas fa-user"></i> 藪根 茂樹(ヤブネ シゲキ)</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 大阪府出身 → 埼玉県</p>
+                            <p><i class="fas fa-birthday-cake"></i> <date>1998.02.03</date>(23歳)</p>
+                            <p><i class="fas fa-graduation-cap"></i>立命館大学</p>
+                        </div><!-- profile -->
+
+                        <div class="content" id="like">
+                            <h2>好き/得意</h2>
+                            <p><i class="fas fa-paw"></i> ウサギ</p>
+                            <p><i class="fas fa-table-tennis"></i> スポーツ</p>
+                            <p><i class="fas fa-music"></i> 音楽</p>
+                            <p><i class="fas fa-chalkboard-teacher"></i> 教えること</p>
+                        </div><!-- like -->
+
+                        <div class="content" id="qualification">
+                            <h2>資格/その他</h2>
+                            <p><i class="fas fa-pencil-alt"></i> 基本/応用情報 合格</p>
+                            <p><i class="fab fa-linux"></i> LPICを通し,Linux学習中</p>
+                            <p></p>
+                        </div>
+                    </div><!-- contents -->
+
+                    <div class="page_sub">
+                        <img src="./images/bike.jpg" width="150px" height="150px" alt="">
+                        <img src="./images/icon_guitar.jpg" width="150px" height="150px" alt="">
+                        <img src="./images/rabbit.jpg" width="150px" height="150px" alt="">
+                        <img src="./images/icon_face.jpg" width="150px" height="150px" alt="">
+                    </div><!-- page_sub -->
+                </div>
+            </article>
+
+
+            <article id="background">
+                <img class="bg_image" src="./images/contents_background.JPG" alt="">
+
+                <div class="page">
+                    <div class="page_title">
+                        <h1>Back Ground</h1>
+                    </div> 
+
+                    <div class="contents">
+
+                        <!-- tech -->
+                        <div class="contents_tech">
+                            <div class="contents_head">
+                                <h2>Tech</h2>
+                            </div>
+
+                            <div class="student">
+                                <div class="content_center">
+                                <p>「Bloody Monday」を見て<br><span>IT/ハッカーの世界に憧れ</span>をもつ</p>
+                                <p><span>JavaScriptの書籍を１冊</span>やり遂げる</p>
+                                <p>初めて<span>HTMLでホームページ</span>を作る</p>
+                                <p>自作HPをプロバイダ提供のサーバで運用</p>
+                                <p>情報系の勉強がしたかったので<br>立命館大学情報理工学部を選択</p>
+                                </div>
+                            </div>
+
+                            <div class="university">
+                                <p>授業で躓いていた友達にC言語を教えることで、<br>自分が<span>教えることが上手</span>だと認識</p>
+                                <p>サイバーセキュリティ研究室</p>
+                                <p>基本/応用情報技術者試験　合格</p>
+                                <p>Androidアプリ開発<br>（カメラ/電子署名/通信 機能）</p>
+                                <p>Ruby on Rails で<br>サークルの業務アプリケーション作成</p>
+                            </div>
+
+                            <div class="employed_person">
+                                <p>イマココ！</p>
+                                <p>Java</p>
+                            </div>
+                        </div>
+
+
+                        <!-- time line -->
+                        <div class="contents_time">
+                            <div class="contents_head">
+                                <h2></h2>
+                            </div>
+                            <div class="times student">
+                                <p>中学・高校</p>
+                            </div>
+
+                            <div class="times university">
+                                <p>大学</p>
+                            </div>
+
+                            <div class="times employed_person">
+                                <p>SIer</p>
+                            </div>
+                        </div>
+
+
+                        <!-- other -->
+                        <div class="contents_other">
+                            <div class="contents_head">
+                                <h2>その他</h2>
+                            </div>
+
+                            <div class="student">
+                                <p>卓球 → 地区大会５位/大阪府大会ベスト１６</p>
+                                <p>ボクシング → 約二年で事務主催のスパーリング大会でMVP</p>
+                            </div>
+                            <div class="university">
+                                <p>軽音楽サークルの運営役</p>
+                                <p>サークルのIT班としてYoutubeでの発信やクラウドストレージで情報伝達を促進</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <article id="portfolio">
+                <img class="bg_image" src="./images/contents_background.JPG" alt="">
+
+                <div class="page">
+
+                    <div class="page_title">
+                        <h1>Portfolio</h1>
+                    </div><!-- page_title -->
+
+                    <div class="page_main">    
+                        <h2><br>Jack<br>Members</h2>
+
+                        <div class="link">
+                            <a id="github" href="https://github.com/yabushi/jackmembers">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a id="heroku" href="https://jackmembers.herokuapp.com/user">
+                                <i class="fas fa-link"></i> APP
+                            </a>
+                        </div>
+                        
+                        <div id="overview">
+                            <h3>概要</h3>
+
+                            <div id="overview_content">
+                                <p>私が大学生の時に所属していた,軽音楽サークル用の</p>
+                                <p><span>事務手続き用業務アプリケーション</span>です！</p>
+                                <p>練習場使用の申請や,部費発生状況の確認等,</p>
+                                <p>私が<span>運営に携わっていた時に感じた不便</span>を</p>
+                                <p><span>ITの力で解決できないか</span>と考え,作成しました！</p>
+                            </div>
+                        </div><!-- overview ここまで -->
+                        
+                        <div class="contents">
+                            <div class="portfolio_L">
+                                <img id="portfolio_img" src="./images/JackMembers_screenshot.jpg" alt="">
+                            </div>
+                            <div class="portfolio_R">
+                                <div class="null_div">
+                                    <div class="portfolio_R_L">
+                                        <h3>主な使用技術</h3>
+                                        <div class="portfolio_R_contents">
+                                            <p>HTML/CSS</p>
+                                            <p>ruby on Rails</p>
+                                            <p>MySQL</p>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio_R_R">
+                                        <h3>インフラ/開発環境等</h3>
+                                        <div class="portfolio_R_contents">
+                                            <p>GitHub</p>
+                                            <p>ubuntu</p>
+                                            <p>Heroku</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio_function">
+                                    <h3>運営上の問題とそれを解決する機能</h3>
+                                    <div class="portfolio_R_contents">
+                                        <p><i class="far fa-times-circle"></i> バンドを管理するための<br>
+                                            <span>書類の管理が大変</span>……</p>
+                                        <p><i class="fas fa-arrow-down"></i></p>
+                                        <p><i class="far fa-lightbulb"></i> バンドの登録/削除/並び替えなどを<br>
+                                            <span>ネット上で完結！</span></p>
+                                        <br>
+                                        <p><i class="far fa-times-circle"></i> 部費を徴収するバンドを<br>
+                                            <span>練習場使用履歴から探さないと</span>……</p>
+                                        <p><i class="fas fa-arrow-down"></i> </p>
+                                        <p><i class="far fa-lightbulb"></i> DBの練習履歴から<br>
+                                            <span>毎月自動で部費発生状況をお知らせ！</span></p>
+                                    </div>
+                                </div>                    
+                            </div>
+                            
+                        </div>
+                    </div><!-- page_main ここまで -->
+
+                </div>
+            </article>
+
+            <article id="thankyou">
+
+                <img class="bg_image" src="./images/contents_background.JPG" alt="">
+
+                <div class="page">
+
+                    <div class="page_title">
+                        <h1>Thank You!</h1>
+                    </div><!-- contents_title -->
+
+                    <div class="contents">
+                        <p>最後まで読んでいただき,ありがとうございます！</p>
+                        <p>ご連絡は下記のリンクから！</p>
+                        <p>どうぞよろしくお願いいたします！</p>
+                    </div>
+
+                    <div class="contact">
+                        <a class="twitter" href="https://twitter.com/yabunepro"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a class="github" href="https://github.com/yabushi"><i class="fab fa-github"></i> Github</a>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- 記事テンプレート
+            <article>
+                <img class="bg_image" src="./images/contents_background.JPG" alt="">
+
+                <div class="page">
+                    <div class="page_title">
+                        <h1>自己紹介用サイトです！</h1>
+                    </div> 
+
+                    <div class="contents">
+                        <p>ーーーーーーーーーーーーーー本文ーーーーーーーーーーーーーー</p>
+                    </div>
+                </div>
+            </article>
+            -->
+        </div>
+
+        <footer>
+            <p>Shigeki Yabune</p>
+        </footer>
+
+    </body>
+</html>

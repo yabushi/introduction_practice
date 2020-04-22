@@ -7,16 +7,26 @@ body {
     width: 1000px;
     margin: 0 auto;
 }
-
+#top_image {
+    position: relative;
+}
 #top_pic {
     margin: 20px 0;
     vertical-align: bottom;
     border-radius: 10px;
 }
-#top_page {
-    background-color: azure;
-    height: 300px;
+.top_page {
+    background-color: rgba(68, 68, 68, 0.877);
+    height: 220px;
     width: 600px;
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+    color: white;
+    text-align: right;
+}
+.top_page h1 {
+    font-size: 45px;
 }
 
 

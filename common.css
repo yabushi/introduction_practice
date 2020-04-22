@@ -13,6 +13,11 @@ body {
     vertical-align: bottom;
     border-radius: 10px;
 }
+#top_page {
+    background-color: azure;
+    height: 300px;
+    width: 600px;
+}
 
 
 /* 全記事共通----------------------- */
@@ -124,29 +129,42 @@ h2 {
     height: 1380px;
 }
 
+#background .contents span {
+    color: rgb(255, 58, 58);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 #background .contents {
     content: "";
     clear: both;
     display: block;
 }
+
 #background .content_center {
     display: inline-block;
     vertical-align: middle;
-    margin: 30px 0;   
+    margin: 10px 0;   
 }
-
 
 #background .contents .student {
-    height: 350px;
+    height: 280px;
     margin: 50px 0;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
 }
 #background .contents .university {
-    height: 300px;
+    height: 350px;
     margin: 50px 0;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
 }
 #background .contents .employed_person {
-    height: 300px;
+    height: 200px;
     margin: 50px 0;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
 }
 #background .contents .contents_tech h2 {
     border: solid 5px rgb(0, 154, 214);
@@ -159,15 +177,15 @@ h2 {
 
 #background .contents .contents_tech {
     float: left;
-    width: 300px;
-    margin-left: 120px;
+    width: 380px;
+    margin-left: 70px;
 }
 
 /* time */
 #background .contents .contents_time {
     float: left;
     width: 25px;
-    margin: 0px 60px 0px;
+    margin: 0px 30px 0px;
 }
 #background .contents_time .contents_head {
     height: 160px;
@@ -187,13 +205,11 @@ h2 {
 
 #background .contents .contents_other {
     float: left;
-    width: 300px;
+    width: 380px;
 
 } 
-#background .contents span {
-    color: red;
-    font-size: 18px;
-}
+
+
 
 
 

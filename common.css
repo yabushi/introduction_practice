@@ -239,10 +239,7 @@ h2 {
 }
 #portfolio .link a {
     display: block;
-    width: 100px;
     height: 40px;
-    float: left;
-    margin-left: 100px;
     text-align: center;
     text-decoration: none;
     line-height: 40px;

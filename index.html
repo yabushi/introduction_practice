@@ -1,16 +1,29 @@
+<!-- コンテンツの横幅はもう少し狭めのほうがいい？　画面分割状態でも見れるように？ -->
+<!-- 画像はCSSでサイズ指定するべき？-->
+<!-- CSSも含めた、コメントアウトのうまい方法 -->
+<!-- page_titleのように、使ってないクラスのdivは削除したほうがいい？-->
+<!-- インデント多くなりすぎ？　左のスペース無駄？ -->
+
+<!-- 工夫ポイント 
+    ・who are you ページに写真４枚入れてみた。説明するより写真のほうが効果は高い？？
+    ・ポートフォリオページで、概要の重要部分を下線でなく赤の太字にし、文字サイズを大きくした。
+-->
+
+
 <!DOCTYPE html>
 <html lang="ja">
     <head>
         <title>Introduction!</title>
         <meta charset="utf-8">
         <meta name="description" content="Introduction of Shigeki Yabune!">
-        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="https://www.yabunepro.com/common.css">
+<!--        <link rel="stylesheet" href="common.css"> -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     </head>
 
     <body>
         <header>
-            <!-- no header -->
+            <!-- no header ? -->
         </header>
 
         <div id="main">
@@ -34,13 +47,13 @@
                         <h1>Who are you ?</h1>
                     </div><!-- page_title -->
 
-                    <div class="page_main">
+                    <div class="page_main"> <!-- クラスかIDかで迷った。＆命名 -->
                         <div class="content" id="profile">
                             <h2>プロフィール</h2>
                             <p><i class="fas fa-user"></i> 藪根 茂樹(ヤブネ シゲキ)</p>
                             <p><i class="fas fa-map-marker-alt"></i> 大阪府出身 → 埼玉県</p>
-                            <p><i class="fas fa-birthday-cake"></i> <date>1997.02.03</date>(24歳)</p>
-                            <p><i class="fas fa-graduation-cap"></i>立命館大学 情報理工学部 卒業</p>
+                            <p><i class="fas fa-birthday-cake"></i> <date>1997.02.03</date>(23歳)</p>
+                            <p><i class="fas fa-graduation-cap"></i>立命館大学</p>
                         </div><!-- profile -->
 
                         <div class="content" id="like">
@@ -53,9 +66,11 @@
 
                         <div class="content" id="qualification">
                             <h2>資格/その他</h2>
-                            <p><i class="fas fa-pencil-alt"></i> 基本/応用情報 合格</p>
-                            <p><i class="fab fa-linux"></i> LPIC-L1 合格</p>
-                            <p><i class="fas fa-shield-alt"></i> 情報処理安全確保支援士 学習中</p>
+                            <p><i class="fas fa-pencil-alt"></i> 情報処理安全確保支援士</p>
+                            <p><i class="fab fa-linux"></i> LPIC-L1 </p>
+                            <p><i class="fa-brands fa-aws"></i> AWS-SAA </p>
+                            <p><i class="fa-solid fa-book"></i> C / IoT etc..</p>
+                            <p></p>
                         </div>
                     </div><!-- contents -->
 
@@ -96,8 +111,8 @@
 
                             <div class="university">
                                 <div class="content_center">
-                                    <p>友人にプログラミングを教えることで<br>自分が<span>教えることが上手</span>だと認識</p>
-                                    <p><span>サイバーセキュリティ</span></p>
+                                    <p>友人にC言語を教えることで<br>自分が<span>教えることが上手</span>だと認識</p>
+                                    <p><span>サイバーセキュリティを専攻</span></p>
                                     <p>基本/応用情報技術者試験　合格</p>
                                     <p><span>Androidアプリ</span>開発<br>（カメラ/電子署名/通信 機能）</p>
                                     <p><span>Ruby on Rails</span> で<br>サークルの業務アプリケーション作成</p>
@@ -106,12 +121,11 @@
 
                             <div class="employed_person">
                                 <div class="content_center">
-                                    <p>SIerのセキュリティソリューション部門で<br>ソリューションの開発に注力</p>
-                                    <p>開発に加え、SI事業では身に付きにくいビジネス感覚を<br>ソリューション事業を通して学習中</p>
-                                    
+                                    <p>サイバーセキュリティ技術者として、<br>会社の重要事業に参画</p>
+                                    <p>情報処理安全確保支援士試験に合格</p>
                                 </div>
                             </div>
-                        </div><!-- tech -->
+                        </div>
 
 
                         <!-- time line -->
@@ -130,7 +144,7 @@
                             <div class="times employed_person">
                                 <p>SIer</p>
                             </div>
-                        </div><!-- time line -->
+                        </div>
 
 
                         <!-- other -->
@@ -150,22 +164,20 @@
                             <div class="university">
                                 <div class="content_center">
                                     <p>軽音楽サークルの運営役</p>
-                                    <p>サークルのIT班長<br>
+                                    <p>サークルのIT担当<br>
                                         Youtube発信で対外アピール<br>
                                         クラウドストレージで情報伝達を促進</p>
                                 </div>
                             </div>
                             <div class="employed_person">
                                 <div class="content_center">
-                                    <p>
-                                        会社外部の<br>
-                                        エンジニアコミュニティに参画し<br>
-                                        有益な情報を発信するなど,<br>
-                                        <span>積極的な学びの姿勢</span>を維持
-                                    </p>
+                                    <p>ネットワークの学習のため、簡易DHCPサーバを自作</p>
+                                    <p>企業ネットワークやそのセキュリティの学習を<br>促進させるため、Raspberry pi等を用いて<br>
+                                    疑似社内LANを構築中</p>
+                                    <p>ブロックチェーンの仕組みを用いた<br>WEBアプリを作成中</p>
                                 </div>
                             </div>
-                        </div><!-- other -->
+                        </div>
 
                     </div>
                 </div>
@@ -200,9 +212,8 @@
                                 <p>私が<span>運営に携わっていた時に感じた不便</span>を</p>
                                 <p><span>ITの力で解決できないか</span>と考え,作成しました！</p>
                             </div>
-                        </div><!-- overview -->
+                        </div><!-- overview ここまで -->
                         
-                        <!-- contents -->
                         <div class="contents">
                             <div class="portfolio_L">
                                 <img id="portfolio_img" src="./images/JackMembers_screenshot.jpg" alt="">
@@ -222,7 +233,7 @@
                                         <div class="portfolio_R_contents">
                                             <p>GitHub</p>
                                             <p>ubuntu</p>
-                                            <p>Heroku</p>
+                                            <p>AWS</p>
                                         </div>
                                     </div>
                                 </div>
@@ -245,8 +256,8 @@
                                 </div>                    
                             </div>
                             
-                        </div><!-- contents -->
-                    </div><!-- page_main -->
+                        </div>
+                    </div><!-- page_main ここまで -->
 
                 </div>
             </article>
@@ -259,7 +270,7 @@
 
                     <div class="page_title">
                         <h1>Thank You!</h1>
-                    </div>
+                    </div><!-- contents_title -->
 
                     <div class="contents">
                         <p>最後まで読んでいただき,ありがとうございます！</p>
@@ -293,7 +304,7 @@
         </div>
 
         <footer>
-            <p>Shigeki Yabune</p>
+            <p>2022 Shigeki Yabune</p>
         </footer>
 
     </body>
